@@ -1,21 +1,8 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
-import CustomButton from "./CustomButton";
-import HeroImg from "../media/hero_illustration.png";
-import { Box, Container, Typography, styled, TextField, InputAdornment, Tabs, Tab, Grid } from "@mui/material";
+import { Box, Container, styled, TextField, InputAdornment, Tabs, Tab, Grid } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import ImageIcon from "../media/Image.png";
-import SortIcon from "../media/sort.svg fill.png";
-
-const Title = styled(Typography)(({ theme }) => ({
-  fontSize: "64px",
-  color: "#000336",
-  fontWeight: "bold",
-  margin: theme.spacing(4, 0, 4, 0),
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "40px",
-  },
-}));
 
 const StyledTab = styled(Tab)(({ theme, active }) => ({
   backgroundColor: active ? '#000000' : 'transparent',

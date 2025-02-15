@@ -1,4 +1,4 @@
-import { Box, Container, Typography, styled } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import ImageBackground from '../media/img-love.png.png'
 import SupportIcon from '../media/support.svg.png';
 import SecurityIcon from '../media/security.svg.png';
@@ -11,7 +11,7 @@ export default function Properties() {
     <Box sx={{ mt: 5, backgroundColor: "#FFF0EC", py: 10 }}>
       <Container>
         <Box style={{display: 'flex'}}>
-          <img src={ImageBackground} />
+          <img src={ImageBackground} alt="background" />
           <Box style={{marginLeft: '50px'}}>
             <Box>
               <Typography sx={{fontSize: '52px', fontWeight: '800', color: '#000000', lineHeight: '76px'}}>
@@ -24,7 +24,7 @@ export default function Properties() {
             <Box sx={{marginTop: '60px', display: 'flex'}}>
               <Box style={{display: 'flex'}}>
                 <div style={{backgroundColor: 'white',borderRadius: '20px',width: '50px',height: '50px',display: 'flex',justifyContent: 'center',alignItems: 'center',}}>
-                  <img src={SecurityIcon} style={{ width: '60%', height: '60%', objectFit: 'cover' }} />
+                  <img alt='security' src={SecurityIcon} style={{ width: '60%', height: '60%', objectFit: 'cover' }} />
                 </div>
                 <Box style={{marginLeft: '20px', width: '300px'}}>
                   <Typography sx={{color: '#000000', fontWeight: '700', fontSize: '20px', lineHeight: '32px'}}>
@@ -40,7 +40,7 @@ export default function Properties() {
               </Box>
               <Box style={{display: 'flex', marginLeft: '25px'}}>
                 <div style={{backgroundColor: 'white',borderRadius: '20px',width: '50px',height: '50px',display: 'flex',justifyContent: 'center',alignItems: 'center',}}>
-                  <img src={SupportIcon} style={{ width: '60%', height: '60%', objectFit: 'cover' }} />
+                  <img alt="support" src={SupportIcon} style={{ width: '60%', height: '60%', objectFit: 'cover' }} />
                 </div>
                 <Box style={{marginLeft: '20px', width: '300px'}}>
                   <Typography sx={{color: '#000000', fontWeight: '700', fontSize: '20px', lineHeight: '32px'}}>
@@ -58,7 +58,7 @@ export default function Properties() {
             <Box sx={{marginTop: '60px', display: 'flex'}}>
               <Box style={{display: 'flex'}}>
                 <div style={{backgroundColor: 'white',borderRadius: '20px',width: '50px',height: '50px',display: 'flex',justifyContent: 'center',alignItems: 'center',}}>
-                  <img src={PolicyIcon} style={{ width: '60%', height: '60%', objectFit: 'cover' }} />
+                  <img alt="policy" src={PolicyIcon} style={{ width: '60%', height: '60%', objectFit: 'cover' }} />
                 </div>
                 <Box style={{marginLeft: '20px', width: '300px'}}>
                   <Typography sx={{color: '#000000', fontWeight: '700', fontSize: '20px', lineHeight: '32px'}}>
@@ -74,7 +74,7 @@ export default function Properties() {
               </Box>
               <Box style={{display: 'flex', marginLeft: '25px'}}>
                 <div style={{backgroundColor: 'white',borderRadius: '20px',width: '50px',height: '50px',display: 'flex',justifyContent: 'center',alignItems: 'center',}}>
-                  <img src={ReputableIcon} style={{ width: '60%', height: '60%', objectFit: 'cover' }} />
+                  <img alt="reputable" src={ReputableIcon} style={{ width: '60%', height: '60%', objectFit: 'cover' }} />
                 </div>
                 <Box style={{marginLeft: '20px', width: '300px'}}>
                   <Typography sx={{color: '#000000', fontWeight: '700', fontSize: '20px', lineHeight: '32px'}}>

@@ -1,11 +1,11 @@
-import cmpLogosImg from "../media/logos.png";
-import logoImg from "../media/logo.png";
+// import cmpLogosImg from "../media/logos.png";
+// import logoImg from "../media/logo.png";
 import starsImg from "../media/Star.png";
 import { Box, Container, Typography, styled, Grid, Button } from "@mui/material";
 import Journey2Icon from "../media/journey2.png.png";
 import Journey3Icon from "../media/journey3.png.png";
 import Journey4Icon from "../media/journey4.png.png";
-import FavoriteIcon from "@mui/icons-material/Favorite";
+// import FavoriteIcon from "@mui/icons-material/Favorite";
 import HeartIcon from "../media/Vector.png";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import PersonIcon from "@mui/icons-material/Person";
@@ -51,7 +51,7 @@ const RatingBox = styled(Box)(({ theme }) => ({
 }));
 
 const LoadMoreButton = styled(Button)(({ theme }) => ({
-  marginTop: theme.spacing(2),
+  // marginTop: theme.spacing(2),
   backgroundColor: "#000000",
   color: "white",
   borderRadius: "20px",

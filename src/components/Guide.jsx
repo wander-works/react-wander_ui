@@ -87,14 +87,7 @@ export default function Guide() {
           </Grid>
         ))}
       </Grid>
-      <img style={{marginTop: '80px'}} src={BackgroundImage} />
-
-      {/* <CustomButton
-        backgroundColor="#0F1B4C"
-        color="#fff"
-        buttonText="See Full Guides"
-        guideBtn={true}
-      /> */}
+      <img alt="background" style={{marginTop: '80px'}} src={BackgroundImage} />
     </Box>
   );
 }

@@ -1,7 +1,7 @@
 import fbIcon from "../media/fbicon.png";
 import twitterIcon from "../media/twittericon.png";
 import linkedinIcon from "../media/linkedinicon.png";
-import { Box, Container, Typography, styled } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import LogoFooterIcon from '../media/logo-footer.svg.png'
 import PhoneLogoIcon from '../media/phone.svg.png'
 import MailIcon from '../media/mail.svg.png';
@@ -14,7 +14,7 @@ export default function Footer() {
       <Container>
         <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
           <Box>
-            <img src={LogoFooterIcon} />
+            <img alt="logo footer" src={LogoFooterIcon} />
           </Box>
           <Box style={{ display: 'flex', alignItems: 'center', width: '300px' }}>
             <img style={{ width: '30px', height: '30px', objectFit: 'cover' }} src={PhoneLogoIcon} alt="Phone Logo" />
@@ -28,15 +28,15 @@ export default function Footer() {
             <Typography style={{color: 'white', fontSize: '20px'}}>Contact Us</Typography>
             <Box style={{marginTop: '20px'}}> 
               <div style={{display: 'flex'}}>
-                <img style={{objectFit: 'cover', width: '30px', height: '30px'}} src={AddressIcon} />
+                <img alt="address" style={{objectFit: 'cover', width: '30px', height: '30px'}} src={AddressIcon} />
                 <Typography style={{color: '#8E8E8E', marginLeft: '10px'}}>4517 Washington Ave. Manchester, Kentucky 39495</Typography>
               </div>
               <div style={{display: 'flex', marginTop: '20px'}}>
-                <img style={{objectFit: 'cover', width: '20px', height: '20px'}} src={HourIcon} />
+                <img alt="Hour" style={{objectFit: 'cover', width: '20px', height: '20px'}} src={HourIcon} />
                 <Typography style={{color: '#8E8E8E', marginLeft: '10px'}}>Hours: 8:00 - 17:00, Mon - Sat</Typography>
               </div>
               <div style={{display: 'flex', marginTop: '20px'}}>
-                <img style={{objectFit: 'cover', width: '20px', height: '20px'}} src={MailIcon} />
+                <img alt="Mail" style={{objectFit: 'cover', width: '20px', height: '20px'}} src={MailIcon} />
                 <Typography style={{color: '#8E8E8E', marginLeft: '10px'}}>mjohnmwangi@gmail.com</Typography>
               </div>
             </Box>

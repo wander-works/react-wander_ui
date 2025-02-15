@@ -1,4 +1,3 @@
-import houseCardImg from "../media/houseCard.png";
 import { Box, Button, Container, Grid, Typography, styled } from "@mui/material";
 import DisplayIcon from "../media/viewMore.png";
 import NewImage1 from "../media/news.png.png";
@@ -43,7 +42,7 @@ export default function MoreDetail() {
             borderRadius: "20px",
           }}
         >
-          View More <img style={{ marginLeft: "10px" }} src={DisplayIcon} />
+          View More <img alt="display" style={{ marginLeft: "10px" }} src={DisplayIcon} />
         </Button>
       </Box>
       <Box style={{display: 'flex'}}>
