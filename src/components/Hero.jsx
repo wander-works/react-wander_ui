@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import { Box, Container, styled, TextField, InputAdornment, Tabs, Tab, Grid } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import ImageIcon from "../media/Image.png";
+// import ImageIcon from "../media/Image.png";
 
 const StyledTab = styled(Tab)(({ theme, active }) => ({
   backgroundColor: active ? '#000000' : 'transparent',
@@ -38,14 +38,15 @@ export default function Hero() {
   };
 
   return (
-    <Box sx={{ paddingBottom: 2, marginBottom: 2, border: "none" }}>
-      <Navbar style={{ maxWidth: "100%" }} />
+    <Box sx={{ paddingBottom: 2, marginBottom: 2, border: "none", height: '100px' }}>
+      <Navbar style={{ maxWidth: "100%", }} />
+      <hr />
       <Container>
         <Box sx={{ display: "flex", justifyContent: "center", marginTop: 20 }}>
-          <Box sx={{ position: 'relative', width: '100%' }}>
+          <Box sx={{ position: 'relative', }}>
             {/* Background color applied to this Box */}
             <Box sx={{ backgroundColor: '#F2F4F6', borderRadius: 10, padding: '10px' }}>
-              <TextField
+              {/* <TextField
                 variant="outlined"
                 placeholder="What are you looking for?"
                 InputProps={{
@@ -62,7 +63,7 @@ export default function Hero() {
                   width: "100%",
                   backgroundColor: "transparent", 
                   borderRadius: 10,
-                  height: '80px',
+                  // height: '80px',
                   boxShadow: 0,
                   '& .MuiOutlinedInput-root': {
                     '& fieldset': {
@@ -80,9 +81,9 @@ export default function Hero() {
                     },
                   },
                 }}
-              />
+              /> */}
             </Box>
-            <Tabs
+            {/* <Tabs
               value={activeTab}
               onChange={handleTabChange}
               sx={{
@@ -99,12 +100,12 @@ export default function Hero() {
               <StyledTab label="Tickets" active={activeTab === 2} />
               <StyledTab label="Rentals" active={activeTab === 3} />
               <StyledTab label="Activities" active={activeTab === 4} />
-            </Tabs>
+            </Tabs> */}
           </Box>
         </Box>
 
         {/* Categories Section */}
-        <Grid container spacing={2} sx={{ marginTop: 3 }}>
+        {/* <Grid container spacing={2} sx={{ marginTop: 3 }}>
           <Grid item xs={6} sm={2} sx={{cursor: 'pointer'}}>
             < CategoryBox>Categories <img style={{ marginLeft: '5px' }} src={ImageIcon} alt="icon" /></CategoryBox>
           </Grid>
@@ -120,12 +121,11 @@ export default function Hero() {
           <Grid item xs={12} sm={2} sx={{ display: 'flex', justifyContent: 'flex-end', float: 'right', cursor: 'pointer' }}>
             <SortBox>
               Sort: High to Low 
-              {/* <img style={{ marginLeft: '5px' }} src={SortIcon} alt="icon" /> */}
+              <img style={{ marginLeft: '5px' }} src={SortIcon} alt="icon" />
             </SortBox>
           </Grid>
-        </Grid>
+        </Grid> */}
       </Container>
-      <hr />
     </Box>
   );
 }
