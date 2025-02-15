@@ -1,6 +1,6 @@
 import { useState } from "react";
-import CustomButton from "./CustomButton";
-import logoImg from "../media/logo.png";
+// import CustomButton from "./CustomButton";
+import logoImg from "../media/logo-footer.svg.png";
 import {
   Box,
   Container,
@@ -59,6 +59,7 @@ const NavbarLinkBox = styled(Box)(({ theme }) => ({
 const NavbarLink = styled(Typography)(({ theme }) => ({
   color: "#4F5361",
   fontWeight: "bold",
+  fontSize: '20px',
   cursor: "pointer",
   "&:hover": {
     color: "#fff",
@@ -126,10 +127,9 @@ export default function Navbar() {
         >
           <ListComponent />
         </Drawer>
-        <NavbarLogo src={logoImg} alt="logo" />
       </Box>
-
-      <NavbarLinkBox style={{ marginLeft: "50px" }}>
+      <NavbarLogo src={logoImg} alt="logo" />
+      <NavbarLinkBox style={{}}>
         <NavbarLink>
           Home <img style={{ marginLeft: "5px" }} src={ImageIcon} alt="icon" />
         </NavbarLink>
@@ -141,36 +141,12 @@ export default function Navbar() {
           <img style={{ marginLeft: "5px" }} src={ImageIcon} alt="icon" />
         </NavbarLink>
         <NavbarLink>
-          Activities{" "}
-          <img style={{ marginLeft: "5px" }} src={ImageIcon} alt="icon" />
-        </NavbarLink>
-        <NavbarLink>
           Hotel <img style={{ marginLeft: "5px" }} src={ImageIcon} alt="icon" />
         </NavbarLink>
-        <NavbarLink>
-          Rental{" "}
-          <img style={{ marginLeft: "5px" }} src={ImageIcon} alt="icon" />
-        </NavbarLink>
-        <NavbarLink>
-          Tickets{" "}
-          <img style={{ marginLeft: "5px" }} src={ImageIcon} alt="icon" />
-        </NavbarLink>
-        <NavbarLink>
-          Pages <img style={{ marginLeft: "5px" }} src={ImageIcon} alt="icon" />
-        </NavbarLink>
-        <NavbarLink>
-          Blog <img style={{ marginLeft: "5px" }} src={ImageIcon} alt="icon" />
-        </NavbarLink>
-        <NavbarLink>Contact </NavbarLink>
+        <NavbarLink>Profile</NavbarLink>
       </NavbarLinkBox>
 
       <Box sx={{ display: "flex", alignItems: "center", columnGap: 2 }}>
-        <NavbarLink>Sign In</NavbarLink>
-        <CustomButton
-          backgroundColor="#0F1B4C"
-          color="#fff"
-          buttonText="Register"
-        ></CustomButton>
       </Box>
     </NavbarContainer>
   );

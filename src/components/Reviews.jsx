@@ -64,17 +64,17 @@ const LoadMoreButton = styled(Button)(({ theme }) => ({
 
 export default function Reviews() {
   return (
-    <Box sx={{ padding: 4 }}>
+    <Box sx={{}}>
       <Typography
         variant="h4"
         sx={{
           fontWeight: "800",
-          fontSize: "52px",
+          fontSize: "24px",
           textAlign: "center",
           marginBottom: 2,
         }}
       >
-        Recommended For You
+        Popular Experiences
       </Typography>
       <Typography
         variant="body1"

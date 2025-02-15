@@ -38,7 +38,7 @@ export default function Hero() {
   };
 
   return (
-    <Box sx={{ paddingBottom: 2, marginBottom: 6, border: "none" }}>
+    <Box sx={{ paddingBottom: 2, marginBottom: 2, border: "none" }}>
       <Navbar style={{ maxWidth: "100%" }} />
       <Container>
         <Box sx={{ display: "flex", justifyContent: "center", marginTop: 20 }}>
