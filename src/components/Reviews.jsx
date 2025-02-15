@@ -40,14 +40,14 @@ const CustomBox = styled(Box)(({ theme }) => ({
 
 const RatingBox = styled(Box)(({ theme }) => ({
   position: "absolute",
-  top: 275,
+  top: 230,
   right: 10,
   display: "flex",
   alignItems: "center",
   backgroundColor: "white",
   padding: "5px 10px",
   borderRadius: "15px",
-  boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
+  // boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
 }));
 
 const LoadMoreButton = styled(Button)(({ theme }) => ({
@@ -91,7 +91,7 @@ export default function Reviews() {
 
       <CustomBoxCtn>
         <Grid container spacing={2} sx={{ marginTop: 2 }}>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
               <img
                 src={Journey2Icon}
@@ -231,7 +231,7 @@ export default function Reviews() {
               </CustomBox>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
               <img
                 src={Journey3Icon}
@@ -371,7 +371,7 @@ export default function Reviews() {
               </CustomBox>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
               <img
                 src={Journey4Icon}
@@ -511,7 +511,7 @@ export default function Reviews() {
               </CustomBox>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
               <img
                 src={Journey2Icon}
@@ -653,7 +653,7 @@ export default function Reviews() {
               </CustomBox>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
               <img
                 src={Journey3Icon}
@@ -793,7 +793,7 @@ export default function Reviews() {
               </CustomBox>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
               <img
                 src={Journey4Icon}
