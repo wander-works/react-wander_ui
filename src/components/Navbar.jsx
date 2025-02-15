@@ -61,9 +61,9 @@ const NavbarLink = styled(Typography)(({ theme }) => ({
   fontWeight: "bold",
   fontSize: '20px',
   cursor: "pointer",
-  "&:hover": {
-    color: "#fff",
-  },
+  // "&:hover": {
+  //   color: "#fff",
+  // },
 }));
 
 const MenuBox = styled(Box)(({ theme }) => ({

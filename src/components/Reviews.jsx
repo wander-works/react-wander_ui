@@ -148,7 +148,7 @@ export default function Reviews() {
               <CustomBox>
                 <Typography
                   variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "24px" }}
+                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
                 >
                   California Sunset/Twilight Boat Cruise
                 </Typography>
@@ -288,7 +288,7 @@ export default function Reviews() {
               <CustomBox>
                 <Typography
                   variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "24px" }}
+                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
                 >
                   NYC: Food Tastings and Culture Tour
                 </Typography>
@@ -428,7 +428,7 @@ export default function Reviews() {
               <CustomBox>
                 <Typography
                   variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "24px" }}
+                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
                 >
                   Grand Canyon Horseshoe Bend 2 days
                 </Typography>
@@ -565,12 +565,12 @@ export default function Reviews() {
                   4.96 (672 reviews)
                 </Typography>
               </RatingBox>
-              <CustomBox sx={{ marginTop: "20px" }}>
+              <CustomBox sx={{}}>
                 {" "}
                 {/* Add marginTop to CustomBox */}
                 <Typography
                   variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "24px" }}
+                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
                 >
                   California Sunset/Twilight Boat Cruise
                 </Typography>
@@ -710,7 +710,7 @@ export default function Reviews() {
               <CustomBox>
                 <Typography
                   variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "24px" }}
+                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
                 >
                   NYC: Food Tastings and Culture Tour
                 </Typography>
@@ -850,7 +850,7 @@ export default function Reviews() {
               <CustomBox>
                 <Typography
                   variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "24px" }}
+                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
                 >
                   Grand Canyon Horseshoe Bend 2 days
                 </Typography>
