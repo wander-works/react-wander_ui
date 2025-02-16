@@ -23,8 +23,8 @@ const CustomBoxCtn = styled(Container)(({ theme }) => ({
 }));
 
 const CustomBox = styled(Box)(({ theme }) => ({
-  // position: "absolute",
-  bottom: 0,
+  position: "relative",
+  bottom: '30px',
   left: 0,
   backgroundColor: "white",
   padding: "20px",
@@ -34,19 +34,19 @@ const CustomBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     width: "100%",
   },
-  height: "200px",
-  top: "80%",
+  // height: "200px",
+  // top: "80%",
 }));
 
 const RatingBox = styled(Box)(({ theme }) => ({
   position: "absolute",
-  top: 230,
+  top: '1px',
   right: 10,
   display: "flex",
   alignItems: "center",
-  backgroundColor: "white",
-  padding: "5px 10px",
-  borderRadius: "15px",
+  // backgroundColor: "white",
+  // padding: "5px 10px",
+  // borderRadius: "15px",
   // boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
 }));
 
@@ -65,27 +65,10 @@ const LoadMoreButton = styled(Button)(({ theme }) => ({
 export default function Reviews() {
   return (
     <Box sx={{}}>
-      <Typography
-        variant="h4"
-        sx={{
-          fontWeight: "800",
-          fontSize: "24px",
-          textAlign: "center",
-          marginBottom: 2,
-        }}
-      >
+      <Typography variant="h4" sx={{fontWeight: "800",fontSize: "24px",textAlign: "center",marginBottom: 2,}}>
         Popular Experiences
       </Typography>
-      <Typography
-        variant="body1"
-        sx={{
-          color: "#7D8589",
-          textAlign: "center",
-          marginBottom: 4,
-          fontWeight: "500",
-          fontSize: "20px",
-        }}
-      >
+      <Typography variant="body1" sx={{color: "#7D8589",textAlign: "center",marginBottom: 4,fontWeight: "500",fontSize: "20px",}}>
         The best booking platform you can trust
       </Typography>
 
@@ -93,138 +76,44 @@ export default function Reviews() {
         <Grid container spacing={2} sx={{ marginTop: 2 }}>
           <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
-              <img
-                src={Journey2Icon}
-                alt="Journey 2"
-                style={{
-                  width: "100%",
-                  borderRadius: "10px",
-                  minHeight: "200px",
-                  objectFit: "cover",
-                }}
-              />
-              <Box
-                sx={{
-                  position: "absolute",
-                  top: 10,
-                  left: 10,
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "calc(100% - 20px)",
-                }}
-              >
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "10px",
-                    padding: "5px 10px",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
+              <img src={Journey2Icon} alt="Journey 2" style={{width: "100%",borderRadius: "10px",minHeight: "200px",objectFit: "cover",}}/>
+              <Box sx={{position: "absolute",top: 10,left: 10,display: "flex",justifyContent: "space-between",width: "calc(100% - 20px)",}} >
+                <Box sx={{backgroundColor: "white",borderRadius: "10px",padding: "5px 10px",display: "flex",alignItems: "center",}}>
                   <Typography variant="body2">Top Rated</Typography>
                 </Box>
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "50%",
-                    width: "30px",
-                    height: "30px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginLeft: "auto",
-                  }}
-                >
+                <Box sx={{backgroundColor: "white",borderRadius: "50%",width: "30px",height: "30px",display: "flex",justifyContent: "center",alignItems: "center",marginLeft: "auto",}}>
                   <img src={HeartIcon} alt="icon" />
                 </Box>
               </Box>
-              <RatingBox>
-                <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
-                <Typography variant="body2" sx={{ fontWeight: "bold" }}>
-                  4.96 (672 reviews)
-                </Typography>
-              </RatingBox>
               <CustomBox>
-                <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
-                >
+                <RatingBox>
+                  <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
+                  <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+                    4.96 (672 reviews)
+                  </Typography>
+                </RatingBox>
+                <Typography variant="h6" sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}>
                   California Sunset/Twilight Boat Cruise
                 </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}}>
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373",}}>
                     <AccessTimeIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">2 days 3 nights</Typography>
                   </Box>
 
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373",}}>
                     <PersonIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">4-6 guests</Typography>
                   </Box>
                 </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      fontWeight: "800",
-                      fontSize: "24px",
-                      color: "#000000",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}}>
+                  <Typography variant="body2" sx={{fontWeight: "800",fontSize: "24px",color: "#000000",}}>
                     $48.25
-                    <span
-                      style={{
-                        fontWeight: "500",
-                        fontSize: "16px",
-                        color: "#737373",
-                      }}
-                    >
+                    <span style={{fontWeight: "500",fontSize: "16px",color: "#737373",}}>
                       / person
                     </span>
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "#000000",
-                      fontWeight: "bold",
-                      border: "1px solid #F2F4F6",
-                      borderRadius: "10px",
-                      width: "80px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      textAlign: "center",
-                      padding: "6px",
-                      backgroundColor: "#FFFFFF",
-                    }}
-                  >
+                  <Typography variant="body2" sx={{color: "#000000",fontWeight: "bold",border: "1px solid #F2F4F6",borderRadius: "10px",width: "80px",display: "flex",justifyContent: "center",alignItems: "center",textAlign: "center",padding: "6px",backgroundColor: "#FFFFFF",}}>
                     Book Now
                   </Typography>
                 </Box>
@@ -233,138 +122,43 @@ export default function Reviews() {
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
-              <img
-                src={Journey3Icon}
-                alt="Journey 3"
-                style={{
-                  width: "100%",
-                  borderRadius: "10px",
-                  minHeight: "200px",
-                  objectFit: "cover",
-                }}
-              />
-              <Box
-                sx={{
-                  position: "absolute",
-                  top: 10,
-                  left: 10,
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "calc(100% - 20px)",
-                }}
-              >
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "10px",
-                    padding: "5px 10px",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
+              <img src={Journey3Icon} alt="Journey 3" style={{ width: "100%", borderRadius: "10px", minHeight: "200px", objectFit: "cover", }} />
+              <Box sx={{position: "absolute",top: 10,left: 10,display: "flex",justifyContent: "space-between",width: "calc(100% - 20px)",}}>
+                <Box sx={{backgroundColor: "white",borderRadius: "10px",padding: "5px 10px",display: "flex",alignItems: "center",}}>
                   <Typography variant="body2">Best Sale</Typography>
                 </Box>
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "50%",
-                    width: "30px",
-                    height: "30px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginLeft: "auto",
-                  }}
-                >
+                <Box sx={{backgroundColor: "white",borderRadius: "50%",width: "30px",height: "30px",display: "flex",justifyContent: "center",alignItems: "center",marginLeft: "auto",}}>
                   <img src={HeartIcon} alt="icon" />
                 </Box>
               </Box>
-              <RatingBox>
-                <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
-                <Typography variant="body2" sx={{ fontWeight: "bold" }}>
-                  4.96 (672 reviews)
-                </Typography>
-              </RatingBox>
               <CustomBox>
-                <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
-                >
+                <RatingBox>
+                  <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
+                  <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+                    4.96 (672 reviews)
+                  </Typography>
+                </RatingBox>
+                <Typography variant="h6" sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }} >
                   NYC: Food Tastings and Culture Tour
                 </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}}>
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373",}} >
                     <AccessTimeIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">3 days 3 nights</Typography>
                   </Box>
-
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373",}}>
                     <PersonIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">4-6 guests</Typography>
                   </Box>
                 </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      fontWeight: "800",
-                      fontSize: "24px",
-                      color: "#000000",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}}>
+                  <Typography variant="body2" sx={{fontWeight: "800",fontSize: "24px",color: "#000000",}}>
                     $17.32
-                    <span
-                      style={{
-                        fontWeight: "500",
-                        fontSize: "16px",
-                        color: "#737373",
-                      }}
-                    >
+                    <span style={{fontWeight: "500",fontSize: "16px",color: "#737373",}}>
                       / person
                     </span>
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "#000000",
-                      fontWeight: "bold",
-                      border: "1px solid #F2F4F6",
-                      borderRadius: "10px",
-                      width: "80px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      textAlign: "center",
-                      padding: "6px",
-                      backgroundColor: "#FFFFFF",
-                    }}
-                  >
+                  <Typography variant="body2" sx={{color: "#000000",fontWeight: "bold",border: "1px solid #F2F4F6",borderRadius: "10px",width: "80px",display: "flex",justifyContent: "center",alignItems: "center",textAlign: "center",padding: "6px",backgroundColor: "#FFFFFF",}}>
                     Book Now
                   </Typography>
                 </Box>
@@ -373,138 +167,44 @@ export default function Reviews() {
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
-              <img
-                src={Journey4Icon}
-                alt="Journey 4"
-                style={{
-                  width: "100%",
-                  borderRadius: "10px",
-                  minHeight: "200px",
-                  objectFit: "cover",
-                }}
-              />
-              <Box
-                sx={{
-                  position: "absolute",
-                  top: 10,
-                  left: 10,
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "calc(100% - 20px)",
-                }}
-              >
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "10px",
-                    padding: "5px 10px",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
+              <img src={Journey4Icon} alt="Journey 4" style={{ width: "100%", borderRadius: "10px", minHeight: "200px", objectFit: "cover", }} />
+              <Box sx={{position: "absolute",top: 10,left: 10,display: "flex",justifyContent: "space-between",width: "calc(100% - 20px)",}}>
+                <Box sx={{backgroundColor: "white",borderRadius: "10px",padding: "5px 10px",display: "flex",alignItems: "center",}}>
                   <Typography variant="body2">25 % Off</Typography>
                 </Box>
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "50%",
-                    width: "30px",
-                    height: "30px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginLeft: "auto",
-                  }}
-                >
+                <Box sx={{backgroundColor: "white",borderRadius: "50%",width: "30px",height: "30px",display: "flex",justifyContent: "center",alignItems: "center",marginLeft: "auto",}}>
                   <img src={HeartIcon} alt="icon" />
                 </Box>
               </Box>
-              <RatingBox>
-                <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
-                <Typography variant="body2" sx={{ fontWeight: "bold" }}>
-                  4.96 (672 reviews)
-                </Typography>
-              </RatingBox>
               <CustomBox>
-                <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
-                >
+                <RatingBox>
+                  <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
+                  <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+                    4.96 (672 reviews)
+                  </Typography>
+                </RatingBox>
+                <Typography variant="h6" sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }} >
                   Grand Canyon Horseshoe Bend 2 days
                 </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}}>
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373",}} >
                     <AccessTimeIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">7 days 6 nights</Typography>
                   </Box>
 
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373",}}>
                     <PersonIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">4-6 guests</Typography>
                   </Box>
                 </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      fontWeight: "800",
-                      fontSize: "24px",
-                      color: "#000000",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}}>
+                  <Typography variant="body2" sx={{fontWeight: "800",fontSize: "24px",color: "#000000",}}>
                     $15.63
-                    <span
-                      style={{
-                        fontWeight: "500",
-                        fontSize: "16px",
-                        color: "#737373",
-                      }}
-                    >
+                    <span style={{fontWeight: "500",fontSize: "16px",color: "#737373",}}>
                       / person
                     </span>
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "#000000",
-                      fontWeight: "bold",
-                      border: "1px solid #F2F4F6",
-                      borderRadius: "10px",
-                      width: "80px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      textAlign: "center",
-                      padding: "6px",
-                      backgroundColor: "#FFFFFF",
-                    }}
-                  >
+                  <Typography variant="body2" sx={{color: "#000000",fontWeight: "bold",border: "1px solid #F2F4F6",borderRadius: "10px",width: "80px",display: "flex",justifyContent: "center",alignItems: "center",textAlign: "center",padding: "6px",backgroundColor: "#FFFFFF",}}>
                     Book Now
                   </Typography>
                 </Box>
@@ -513,140 +213,45 @@ export default function Reviews() {
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
-              <img
-                src={Journey2Icon}
-                alt="Journey 2"
-                style={{
-                  width: "100%",
-                  borderRadius: "10px",
-                  minHeight: "200px",
-                  objectFit: "contain",
-                }}
-              />
-              <Box
-                sx={{
-                  position: "absolute",
-                  top: 10,
-                  left: 10,
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "calc(100% - 20px)",
-                }}
-              >
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "10px",
-                    padding: "5px 10px",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
+              <img src={Journey2Icon} alt="Journey 2" style={{width: "100%",borderRadius: "10px",minHeight: "200px",objectFit: "contain",}} />
+              <Box sx={{position: "absolute",top: 10,left: 10,display: "flex",justifyContent: "space-between",width: "calc(100% - 20px)",}}>
+                <Box sx={{backgroundColor: "white",borderRadius: "10px",padding: "5px 10px",display: "flex",alignItems: "center",}}>
                   <Typography variant="body2">Top Rated</Typography>
                 </Box>
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "50%",
-                    width: "30px",
-                    height: "30px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginLeft: "auto",
-                  }}
-                >
+                <Box sx={{backgroundColor: "white",borderRadius: "50%",width: "30px",height: "30px",display: "flex",justifyContent: "center",alignItems: "center",marginLeft: "auto",}}>
                   <img src={HeartIcon} alt="icon" />
                 </Box>
               </Box>
-              <RatingBox>
-                <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
-                <Typography variant="body2" sx={{ fontWeight: "bold" }}>
-                  4.96 (672 reviews)
-                </Typography>
-              </RatingBox>
+              
               <CustomBox sx={{}}>
-                {" "}
-                {/* Add marginTop to CustomBox */}
-                <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
-                >
+                <RatingBox>
+                  <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
+                  <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+                    4.96 (672 reviews)
+                  </Typography>
+                </RatingBox>
+                <Typography variant="h6" sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }} >
                   California Sunset/Twilight Boat Cruise
                 </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}}>
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373", }} >
                     <AccessTimeIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">2 days 3 nights</Typography>
                   </Box>
 
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373",}}>
                     <PersonIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">4-6 guests</Typography>
                   </Box>
                 </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      fontWeight: "800",
-                      fontSize: "24px",
-                      color: "#000000",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}}>
+                  <Typography variant="body2" sx={{fontWeight: "800",fontSize: "24px",color: "#000000",}}>
                     $48.25
-                    <span
-                      style={{
-                        fontWeight: "500",
-                        fontSize: "16px",
-                        color: "#737373",
-                      }}
-                    >
+                    <span style={{ fontWeight: "500", fontSize: "16px", color: "#737373", }} >
                       / person
                     </span>
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "#000000",
-                      fontWeight: "bold",
-                      border: "1px solid #F2F4F6",
-                      borderRadius: "10px",
-                      width: "80px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      textAlign: "center",
-                      padding: "6px",
-                      backgroundColor: "#FFFFFF",
-                    }}
-                  >
+                  <Typography variant="body2" sx={{color: "#000000",fontWeight: "bold",border: "1px solid #F2F4F6",borderRadius: "10px",width: "80px",display: "flex",justifyContent: "center",alignItems: "center",textAlign: "center",padding: "6px",backgroundColor: "#FFFFFF",}}>
                     Book Now
                   </Typography>
                 </Box>
@@ -655,138 +260,44 @@ export default function Reviews() {
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
-              <img
-                src={Journey3Icon}
-                alt="Journey 3"
-                style={{
-                  width: "100%",
-                  borderRadius: "10px",
-                  minHeight: "200px",
-                  objectFit: "cover",
-                }}
-              />
-              <Box
-                sx={{
-                  position: "absolute",
-                  top: 10,
-                  left: 10,
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "calc(100% - 20px)",
-                }}
-              >
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "10px",
-                    padding: "5px 10px",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
+              <img src={Journey3Icon} alt="Journey 3" style={{ width: "100%", borderRadius: "10px", minHeight: "200px", objectFit: "cover", }} />
+              <Box sx={{position: "absolute",top: 10,left: 10,display: "flex",justifyContent: "space-between",width: "calc(100% - 20px)",}}>
+                <Box sx={{backgroundColor: "white",borderRadius: "10px",padding: "5px 10px",display: "flex",alignItems: "center",}}>
                   <Typography variant="body2">Best Sale</Typography>
                 </Box>
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "50%",
-                    width: "30px",
-                    height: "30px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginLeft: "auto",
-                  }}
-                >
+                <Box sx={{backgroundColor: "white",borderRadius: "50%",width: "30px",height: "30px",display: "flex",justifyContent: "center",alignItems: "center",marginLeft: "auto",}}>
                   <img src={HeartIcon} alt="icon" />
                 </Box>
               </Box>
-              <RatingBox>
-                <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
-                <Typography variant="body2" sx={{ fontWeight: "bold" }}>
-                  4.96 (672 reviews)
-                </Typography>
-              </RatingBox>
               <CustomBox>
-                <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
-                >
+                <RatingBox>
+                  <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
+                  <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+                    4.96 (672 reviews)
+                  </Typography>
+                </RatingBox>
+                <Typography variant="h6" sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }} >
                   NYC: Food Tastings and Culture Tour
                 </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}}>
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373",}}>
                     <AccessTimeIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">3 days 3 nights</Typography>
                   </Box>
 
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373",}}>
                     <PersonIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">4-6 guests</Typography>
                   </Box>
                 </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      fontWeight: "800",
-                      fontSize: "24px",
-                      color: "#000000",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}} >
+                  <Typography variant="body2" sx={{fontWeight: "800",fontSize: "24px",color: "#000000",}}>
                     $17.32
-                    <span
-                      style={{
-                        fontWeight: "500",
-                        fontSize: "16px",
-                        color: "#737373",
-                      }}
-                    >
+                    <span style={{fontWeight: "500",fontSize: "16px",color: "#737373",}}>
                       / person
                     </span>
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "#000000",
-                      fontWeight: "bold",
-                      border: "1px solid #F2F4F6",
-                      borderRadius: "10px",
-                      width: "80px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      textAlign: "center",
-                      padding: "6px",
-                      backgroundColor: "#FFFFFF",
-                    }}
-                  >
+                  <Typography variant="body2" sx={{ color: "#000000", fontWeight: "bold", border: "1px solid #F2F4F6", borderRadius: "10px", width: "80px", display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center", padding: "6px", backgroundColor: "#FFFFFF", }} >
                     Book Now
                   </Typography>
                 </Box>
@@ -795,138 +306,44 @@ export default function Reviews() {
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Box sx={{ position: "relative" }}>
-              <img
-                src={Journey4Icon}
-                alt="Journey 4"
-                style={{
-                  width: "100%",
-                  borderRadius: "10px",
-                  minHeight: "200px",
-                  objectFit: "contain",
-                }}
-              />
-              <Box
-                sx={{
-                  position: "absolute",
-                  top: 10,
-                  left: 10,
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "calc(100% - 20px)",
-                }}
-              >
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "10px",
-                    padding: "5px 10px",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
+              <img src={Journey4Icon} alt="Journey 4" style={{width: "100%",borderRadius: "10px",minHeight: "200px",objectFit: "contain",}}/>
+              <Box sx={{position: "absolute",top: 10,left: 10,display: "flex",justifyContent: "space-between",width: "calc(100% - 20px)",}}>
+                <Box sx={{backgroundColor: "white",borderRadius: "10px",padding: "5px 10px",display: "flex",alignItems: "center",}}>
                   <Typography variant="body2">25 % Off</Typography>
                 </Box>
-                <Box
-                  sx={{
-                    backgroundColor: "white",
-                    borderRadius: "50%",
-                    width: "30px",
-                    height: "30px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    marginLeft: "auto",
-                  }}
-                >
+                <Box sx={{backgroundColor: "white",borderRadius: "50%",width: "30px",height: "30px",display: "flex",justifyContent: "center",alignItems: "center",marginLeft: "auto",}}>
                   <img src={HeartIcon} alt="icon" />
                 </Box>
-              </Box>
-              <RatingBox>
-                <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
-                <Typography variant="body2" sx={{ fontWeight: "bold" }}>
-                  4.96 (672 reviews)
-                </Typography>
-              </RatingBox>
+              </Box>              
               <CustomBox>
-                <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }}
-                >
+                <RatingBox>
+                  <img src={starsImg} alt="star" style={{ marginRight: "8px" }} />
+                  <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+                    4.96 (672 reviews)
+                  </Typography>
+                </RatingBox>
+                <Typography variant="h6" sx={{ fontWeight: "800", fontSize: "18px", marginTop: '10px' }} >
                   Grand Canyon Horseshoe Bend 2 days
                 </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}}>
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373",}}>
                     <AccessTimeIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">7 days 6 nights</Typography>
                   </Box>
 
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#737373",
-                    }}
-                  >
+                  <Box sx={{display: "flex",alignItems: "center",color: "#737373",}}>
                     <PersonIcon sx={{ opacity: 0.2, marginRight: 0.5 }} />
                     <Typography variant="body2">4-6 guests</Typography>
                   </Box>
                 </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginY: 1,
-                  }}
-                >
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      fontWeight: "800",
-                      fontSize: "24px",
-                      color: "#000000",
-                    }}
-                  >
+                <Box sx={{display: "flex",justifyContent: "space-between",alignItems: "center",marginY: 1,}}>
+                  <Typography variant="body2" sx={{fontWeight: "800",fontSize: "24px",color: "#000000",}} >
                     $15.63
-                    <span
-                      style={{
-                        fontWeight: "500",
-                        fontSize: "16px",
-                        color: "#737373",
-                      }}
-                    >
+                    <span style={{fontWeight: "500",fontSize: "16px",color: "#737373",}}>
                       / person
                     </span>
                   </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "#000000",
-                      fontWeight: "bold",
-                      border: "1px solid #F2F4F6",
-                      borderRadius: "10px",
-                      width: "80px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      textAlign: "center",
-                      padding: "6px",
-                      backgroundColor: "#FFFFFF",
-                    }}
-                  >
+                  <Typography variant="body2" sx={{color: "#000000",fontWeight: "bold",border: "1px solid #F2F4F6",borderRadius: "10px",width: "80px",display: "flex",justifyContent: "center",alignItems: "center",textAlign: "center",padding: "6px",backgroundColor: "#FFFFFF",}}>
                     Book Now
                   </Typography>
                 </Box>

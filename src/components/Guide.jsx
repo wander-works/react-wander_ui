@@ -31,15 +31,6 @@ const images = [
 export default function Guide() {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", marginBottom: 8 }}>
-      <div
-        style={{
-          width: "5%",
-          height: "5px",
-          backgroundColor: "#000339",
-          margin: "0 auto",
-        }}
-      ></div>
-
       <Typography
         variant="h3"
         sx={{ fontSize: "52px", fontWeight: "800", color: "#000339" }}
