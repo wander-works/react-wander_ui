@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
-import { Box, Container, styled, TextField, InputAdornment, Tabs, Tab, Grid } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
+import { Box, Container, styled, Tab } from "@mui/material";
+// import SearchIcon from "@mui/icons-material/Search";
 // import ImageIcon from "../media/Image.png";
 
 const StyledTab = styled(Tab)(({ theme, active }) => ({

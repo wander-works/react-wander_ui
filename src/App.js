@@ -6,6 +6,7 @@ import Properties from "./components/Properties";
 import MoreDetail from "./components/MoreDetail";
 // import Featured from "./components/Featured";
 import Footer from "./components/Footer";
+import PopularDestinations from "./components/popularDestinations";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <Reviews />
       <Guide />
+      <PopularDestinations />
       <Properties />
       <MoreDetail />
       {/* <Featured /> */}

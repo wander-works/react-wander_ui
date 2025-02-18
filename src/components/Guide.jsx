@@ -7,7 +7,7 @@ import TopImage4 from '../media/top5.png.png';
 import TopImage5 from '../media/top6.png.png';
 import TopImage6 from '../media/top7.png.png';
 import DisplayIcon from '../media/show.png';
-import BackgroundImage from '../media/Background.png'
+// import BackgroundImage from '../media/Background.png'
 
 const CustomBox = styled(Box)(({ theme }) => ({
   width: "40%",
@@ -78,7 +78,7 @@ export default function Guide() {
           </Grid>
         ))}
       </Grid>
-      <img alt="background" style={{marginTop: '80px'}} src={BackgroundImage} />
+      {/* <img alt="background" style={{marginTop: '80px'}} src={BackgroundImage} /> */}
     </Box>
   );
 }

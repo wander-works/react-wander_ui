@@ -2,23 +2,9 @@ import { useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 // import CustomButton from "./CustomButton";
 import logoImg from "../media/logo.svg.png";
-import {
-  Box,
-  Button,
-  Container,
-  Drawer,
-  InputAdornment,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-  TextField,
-  Typography,
-  styled,
-} from "@mui/material";
+import {Box,Button,Container,Drawer,InputAdornment,List,ListItem,ListItemButton,ListItemIcon,ListItemText,TextField,Typography,styled,} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import ImageIcon from "../media/Image.png";
+// import ImageIcon from "../media/Image.png";
 import {
   Contacts,
   FeaturedPlayList,
@@ -27,21 +13,21 @@ import {
   MiscellaneousServices,
 } from "@mui/icons-material";
 
-const NavbarContainer = styled(Container)(({ theme }) => ({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "space-between",
-  padding: theme.spacing(5),
-  position: "fixed",
-  top: 0,
-  left: 0,
-  right: 0,
-  backgroundColor: "#fff",
-  zIndex: 1000,
-  [theme.breakpoints.down("md")]: {
-    padding: theme.spacing(3),
-  },
-}));
+// const NavbarContainer = styled(Container)(({ theme }) => ({
+//   display: "flex",
+//   alignItems: "center",
+//   justifyContent: "space-between",
+//   padding: theme.spacing(5),
+//   position: "fixed",
+//   top: 0,
+//   left: 0,
+//   right: 0,
+//   backgroundColor: "#fff",
+//   zIndex: 1000,
+//   [theme.breakpoints.down("md")]: {
+//     padding: theme.spacing(3),
+//   },
+// }));
 
 const NavbarLogo = styled("img")(({ theme }) => ({
   cursor: "pointer",
@@ -124,12 +110,12 @@ export default function Navbar() {
     <Container>
       <Box>
         <MenuBox onClick={(e) => setShowMenu(true)}>
-          <MenuIcon />
+          <MenuIcon aria-label="menu" />
         </MenuBox>
         <Drawer
           anchor="left"
           open={showMenu}
-          onClose={(e) => setShowMenu(false)}
+          onClose={() => setShowMenu(false)} 
         >
           <ListComponent />
         </Drawer>

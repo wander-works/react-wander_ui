@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "6400:6400"
+    command: npm start
+
+  test:
+    build: .
+    command: npm test
