@@ -4,38 +4,38 @@ import { Box, Container, styled, Tab } from "@mui/material";
 // import SearchIcon from "@mui/icons-material/Search";
 // import ImageIcon from "../media/Image.png";
 
-const StyledTab = styled(Tab)(({ theme, active }) => ({
-  backgroundColor: active ? '#000000' : 'transparent',
-  color: active ? '#ffffff' : '#000000',
-  '&:hover': {
-    backgroundColor: active ? '#000000' : '#f0f0f0',
-  },
-}));
+// const StyledTab = styled(Tab)(({ theme, active }) => ({
+//   backgroundColor: active ? '#000000' : 'transparent',
+//   color: active ? '#ffffff' : '#000000',
+//   '&:hover': {
+//     backgroundColor: active ? '#000000' : '#f0f0f0',
+//   },
+// }));
 
-const CategoryBox = styled(Box)(({ theme }) => ({
-  backgroundColor: '#F2F4F6',
-  borderRadius: '10px',
-  padding: '10px',
-  textAlign: 'center',
-  margin: theme.spacing(1),
-}));
+// const CategoryBox = styled(Box)(({ theme }) => ({
+//   backgroundColor: '#F2F4F6',
+//   borderRadius: '10px',
+//   padding: '10px',
+//   textAlign: 'center',
+//   margin: theme.spacing(1),
+// }));
 
-const SortBox = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  textAlign: 'center',
-  borderRadius: '10px',
-  border: '1px solid #E4E6E8',
-  padding: '10px',
-  margin: theme.spacing(1), 
-}));
+// const SortBox = styled(Box)(({ theme }) => ({
+//   display: 'flex',
+//   alignItems: 'center',
+//   textAlign: 'center',
+//   borderRadius: '10px',
+//   border: '1px solid #E4E6E8',
+//   padding: '10px',
+//   margin: theme.spacing(1), 
+// }));
 
 export default function Hero() {
-  const [activeTab, setActiveTab] = useState(0);
+  // const [activeTab, setActiveTab] = useState(0);
 
-  const handleTabChange = (event, newValue) => {
-    setActiveTab(newValue);
-  };
+  // const handleTabChange = (event, newValue) => {
+  //   setActiveTab(newValue);
+  // };
 
   return (
     <Box sx={{ paddingBottom: 2, marginBottom: 2, border: "none", height: '100px' }}>

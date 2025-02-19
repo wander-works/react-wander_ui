@@ -31,23 +31,12 @@ const images = [
 export default function Guide() {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", marginBottom: 8 }}>
-      <Typography
-        variant="h3"
-        sx={{ fontSize: "52px", fontWeight: "800", color: "#000339" }}
-      >
+      <Typography variant="h3" sx={{ fontSize: "52px", fontWeight: "800", color: "#000339" }} >
         Top Categories of Tours
       </Typography>
 
       <CustomBox>
-        <Typography
-          variant="body2"
-          sx={{
-            fontSize: "16px",
-            fontWeight: "500",
-            color: "#5A6473",
-            textAlign: "center",
-          }}
-        >
+        <Typography variant="body2" sx={{fontSize: "16px",fontWeight: "500",color: "#5A6473",textAlign: "center",}}>
           Favorite destinations based on customer reviews
         </Typography>
       </CustomBox>
@@ -56,11 +45,7 @@ export default function Guide() {
         {images.map((image, index) => (
           <Grid item xs={12} sm={12} md={3} lg={3} key={index}>
             <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: '24px', width: '280px', height: '180px', border: '1px solid #E4E6E8' }}>
-              <img
-                src={image.src}
-                alt={`TopImage ${index + 1}`}
-                style={{ borderRadius: "20px", objectFit: "cover", }}
-              />
+              <img src={image.src} alt={`TopImage ${index + 1}`} style={{ borderRadius: "20px", objectFit: "cover", }} />
               <Box sx={{display:'flex'}}>
                 <Box sx={{width: '200px'}}>
                   <Typography sx={{ marginTop: 1, fontSize: "18px", fontWeight: "700", textAlign: "left", width: "85%", }}>
