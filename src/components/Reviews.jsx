@@ -1,15 +1,13 @@
-// import cmpLogosImg from "../media/logos.png";
-// import logoImg from "../media/logo.png";
 import starsImg from "../media/Star.png";
 import { Box, Container, Typography, styled, Grid, Button } from "@mui/material";
 import Journey2Icon from "../media/journey2.png.png";
 import Journey3Icon from "../media/journey3.png.png";
 import Journey4Icon from "../media/journey4.png.png";
-// import FavoriteIcon from "@mui/icons-material/Favorite";
 import HeartIcon from "../media/Vector.png";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import PersonIcon from "@mui/icons-material/Person";
 import LoadMoreIcon from '../media/SVG.png'
+import { useNavigate } from "react-router-dom";
 
 const CustomBoxCtn = styled(Container)(({ theme }) => ({
   display: "flex",
@@ -63,6 +61,10 @@ const LoadMoreButton = styled(Button)(({ theme }) => ({
 }));
 
 export default function Reviews() {
+  const navigate = useNavigate();
+  const handlePackageClick = (id) => {
+    navigate(`/package/${id}`);
+  };
   return (
     <Box sx={{}}>
       <Typography variant="h4" sx={{fontWeight: "800",fontSize: "24px",textAlign: "center",marginBottom: 2,}}>
@@ -75,7 +77,7 @@ export default function Reviews() {
       <CustomBoxCtn>
         <Grid container spacing={2} sx={{ marginTop: 2 }}>
           <Grid item xs={12} sm={6} md={3}>
-            <Box sx={{ position: "relative" }}>
+            <Box sx={{ position: "relative", cursor: 'pointer' }} onClick={() => handlePackageClick(1)}>
               <img src={Journey2Icon} alt="Journey 2" style={{width: "100%",borderRadius: "10px",minHeight: "200px",objectFit: "cover",}}/>
               <Box sx={{position: "absolute",top: 10,left: 10,display: "flex",justifyContent: "space-between",width: "calc(100% - 20px)",}} >
                 <Box sx={{backgroundColor: "white",borderRadius: "10px",padding: "5px 10px",display: "flex",alignItems: "center",}}>
